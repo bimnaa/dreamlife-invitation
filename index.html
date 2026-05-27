@@ -1,353 +1,511 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2026 인카금융 드림라이프총괄 환영식 초청장</title>
-    <!-- 세련된 Urbanist 폰트(영어 전용) 및 슬림 아이콘 라이브러리 로드 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <style>
-        /* 전역 맑은 고딕 및 산세리프 계열로 완전 통일 */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Malgun Gothic', '맑은 고딕', 'Apple SD Gothic Neo', sans-serif;
-            letter-spacing: -0.5px;
-        }
-        body {
-            background-color: #f4f6fa;
-            color: #1a1a1a;
-            line-height: 1.6;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        /* 도시적인 슬림 핏 모바일 컨테이너 */
-        .invitation-container {
-            width: 100%;
-            max-width: 430px;
-            background-color: #ffffff;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            overflow-x: hidden;
-        }
+<title>2026 인카금융 드림라이프총괄 환영식</title>
 
-        /* 상단 메인 섹션: 매트하고 깔끔한 오리지널 인카블루 단색 지정 */
-        .header-section {
-            background-color: #142d85; 
-            color: #ffffff;
-            text-align: center;
-            padding: 75px 24px 60px 24px;
-        }
-        
-        /* 1.5배 스케일 유지된 선명한 상단 로고 */
-        .top-logo {
-            max-width: 230px;
-            margin: 0 auto 35px auto;
-            filter: brightness(0) invert(1); 
-        }
-        .top-logo img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-        
-        /* 세련된 urbanist 서체의 상단 미니멀 라벨 */
-        .invitation-text {
-            font-family: 'Urbanist', sans-serif;
-            font-size: 13px;
-            font-weight: 500;
-            color: #C5A059; /* 정제된 다크 골드 */
-            margin-bottom: 20px;
-            letter-spacing: 7px;
-            text-transform: uppercase;
-        }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        /* 모든 타이틀 맑은고딕 세련된 볼드 톤으로 통일 */
-        .main-title {
-            line-height: 1.4;
-            margin-bottom: 35px;
-        }
-        .title-brand {
-            font-size: 30px; /* 인카금융 글씨 더 크게 강조 */
-            font-weight: 700;
-            color: #ffffff;
-            display: block;
-            margin-bottom: 8px;
-        }
-        .title-event {
-            font-size: 20px; /* 살짝 작고 단정하게 배치 */
-            font-weight: 400;
-            color: rgba(255, 255, 255, 0.85);
-            display: block;
-        }
-        
-        /* 미니멀 라인 플랫 뱃지 */
-        .sub-title {
-            font-size: 12px;
-            font-weight: 400;
-            color: #C5A059; 
-            letter-spacing: 3px;
-            border: 1px solid #C5A059;
-            display: inline-block;
-            padding: 5px 24px;
-        }
+<!-- Pretendard 대체용 -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-        /* 중간 메인 화이트 콘텐츠 레이아웃 */
-        .middle-content-section {
-            background-color: #ffffff;
-            padding: 50px 0 30px 0;
-        }
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
 
-        /* 도시적이고 모던한 일시/장소 플랫 레이아웃 */
-        .info-section {
-            padding: 0 30px;
-        }
-        .info-card {
-            background-color: #ffffff;
-            border-top: 1px solid #e2e8f0;
-            border-bottom: 1px solid #e2e8f0;
-            padding: 20px 5px;
-        }
-        .info-row {
-            display: flex;
-            align-items: center;
-            padding: 16px 0;
-        }
-        .info-row:first-child {
-            border-bottom: 1px dashed #edf2f7;
-        }
-        /* 심플하고 도시적인 미니멀 사각 아이콘프레임 */
-        .info-icon-box {
-            width: 36px;
-            height: 36px;
-            border: 1px solid #142d85;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #142d85;
-            font-size: 14px;
-            margin-right: 20px;
-            flex-shrink: 0;
-        }
-        .info-text-group {
-            display: flex;
-            flex-direction: column;
-        }
-        .info-label {
-            font-size: 11px;
-            font-weight: 700;
-            color: #C5A059; 
-            letter-spacing: 1px;
-            margin-bottom: 3px;
-        }
-        .info-value {
-            font-size: 16.5px; /* 시원하게 키운 폰트 사이즈 */
-            font-weight: 500;
-            color: #1a1a1a;
-            line-height: 1.4;
-        }
+<style>
 
-        /* 모던 기업형 슬림 가로 구분선 */
-        .divider {
-            text-align: center;
-            margin: 45px auto;
-            width: 40px;
-            height: 1px;
-            background-color: #C5A059;
-        }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-        /* 군더더기 조잡한 효과를 싹 뺀 미니멀 초대의 글 영역 */
-        .greeting-section {
-            padding: 0 35px;
-            text-align: center;
-        }
-        .greeting-text {
-            font-size: 15px;
-            color: #444444;
-            line-height: 2.2;
-            word-break: keep-all;
-            font-weight: 400;
-        }
-        .greeting-highlight {
-            color: #142d85;
-            font-weight: 700;
-        }
+body{
+    background:#edf1f7;
+    font-family:'Noto Sans KR', sans-serif;
+    color:#111;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:20px;
+}
 
-        /* SNS 하단 플랫 버튼 스페이스 */
-        .sns-link-section {
-            padding: 55px 35px 25px 35px;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-        .sns-btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            width: 100%;
-            padding: 14px 0;
-            font-size: 13.5px;
-            font-weight: 500;
-            text-decoration: none;
-            transition: background 0.2s ease;
-        }
-        .sns-btn.instagram {
-            background-color: #ffffff;
-            color: #142d85;
-            border: 1px solid #142d85;
-        }
-        .sns-btn.instagram i {
-            color: #142d85; /* 도시적인 톤앤매너 통일 */
-            font-size: 15px;
-        }
-        .sns-btn.kakaotalk {
-            background-color: #FEE500;
-            color: #191919;
-        }
-        .sns-btn:active {
-            opacity: 0.85;
-        }
+/* 전체 모바일 프레임 */
 
-        /* 하단 푸터: 상단과 완벽 대칭을 이루는 매트 인카블루 단색 배경 */
-        .footer-section {
-            margin-top: auto;
-            padding: 55px 24px 50px 24px;
-            text-align: center;
-            background-color: #142d85; 
-            border-top: 1px solid rgba(255,255,255,0.1);
-        }
-        /* 1.5배 스케일 유지된 하단 로고 */
-        .bottom-logo {
-            max-width: 245px;
-            margin: 0 auto 22px auto;
-            filter: brightness(0) invert(1); 
-        }
-        .bottom-logo img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-        .copyright {
-            color: rgba(255, 255, 255, 0.4);
-            font-size: 11px;
-            font-family: 'Urbanist', sans-serif;
-            letter-spacing: 0.5px;
-        }
+.invitation-wrap{
+    width:100%;
+    max-width:430px;
+    background:#fff;
+    border-radius:32px;
+    overflow:hidden;
+    box-shadow:
+    0 30px 60px rgba(0,0,0,0.08);
+}
 
-        /* 깔끔한 페이드인 효과 */
-        .fade-in {
-            animation: fadeIn ease 1s;
-            -webkit-animation: fadeIn ease 1s;
-        }
-        @keyframes fadeIn {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
-        }
-    </style>
+/* HERO */
+
+.hero{
+    position:relative;
+    padding:70px 32px 60px;
+    background:
+    linear-gradient(
+        180deg,
+        #ffffff 0%,
+        #f6f8fc 100%
+    );
+}
+
+.hero::after{
+    content:'';
+    position:absolute;
+    top:-120px;
+    right:-80px;
+    width:260px;
+    height:260px;
+    background:#142d85;
+    opacity:0.05;
+    border-radius:50%;
+}
+
+.logo{
+    width:145px;
+    margin-bottom:55px;
+}
+
+.logo img{
+    width:100%;
+}
+
+.label{
+    font-size:12px;
+    letter-spacing:4px;
+    color:#142d85;
+    font-weight:700;
+    margin-bottom:18px;
+}
+
+.hero-title{
+    font-size:38px;
+    line-height:1.22;
+    letter-spacing:-2px;
+    font-weight:700;
+    margin-bottom:24px;
+}
+
+.hero-title span{
+    color:#142d85;
+}
+
+.hero-sub{
+    font-size:16px;
+    line-height:1.8;
+    color:#555;
+    word-break:keep-all;
+}
+
+/* DATE CARD */
+
+.date-card{
+    margin:0 28px;
+    margin-top:-25px;
+    background:#142d85;
+    color:#fff;
+    border-radius:28px;
+    padding:28px;
+    position:relative;
+    z-index:5;
+    box-shadow:
+    0 15px 40px rgba(20,45,133,0.18);
+}
+
+.date-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+}
+
+.date-number{
+    font-size:58px;
+    line-height:1;
+    font-weight:700;
+    letter-spacing:-3px;
+}
+
+.date-info{
+    text-align:right;
+}
+
+.date-month{
+    font-size:15px;
+    opacity:0.7;
+    letter-spacing:2px;
+}
+
+.date-year{
+    font-size:28px;
+    font-weight:700;
+    margin-top:5px;
+}
+
+.date-bottom{
+    margin-top:24px;
+    padding-top:20px;
+    border-top:1px solid rgba(255,255,255,0.15);
+}
+
+.date-time{
+    font-size:16px;
+    font-weight:500;
+    margin-bottom:10px;
+}
+
+.date-location{
+    font-size:15px;
+    opacity:0.85;
+    line-height:1.6;
+}
+
+/* CONTENT */
+
+.content{
+    padding:55px 34px 40px;
+}
+
+.section-title{
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:3px;
+    color:#142d85;
+    margin-bottom:24px;
+}
+
+.message{
+    font-size:17px;
+    line-height:2.1;
+    color:#333;
+    word-break:keep-all;
+}
+
+.message strong{
+    color:#142d85;
+    font-weight:700;
+}
+
+/* DIVIDER */
+
+.divider{
+    width:40px;
+    height:2px;
+    background:#142d85;
+    opacity:0.15;
+    margin:45px auto;
+    border-radius:999px;
+}
+
+/* INFO BOX */
+
+.info-box{
+    background:#f8fafc;
+    border-radius:24px;
+    padding:24px;
+}
+
+.info-item{
+    display:flex;
+    align-items:flex-start;
+    gap:16px;
+}
+
+.info-item + .info-item{
+    margin-top:22px;
+}
+
+.icon{
+    width:42px;
+    height:42px;
+    border-radius:14px;
+    background:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#142d85;
+    font-size:16px;
+    box-shadow:
+    0 5px 18px rgba(0,0,0,0.04);
+    flex-shrink:0;
+}
+
+.info-label{
+    font-size:12px;
+    color:#888;
+    margin-bottom:6px;
+}
+
+.info-value{
+    font-size:16px;
+    font-weight:600;
+    color:#111;
+    line-height:1.5;
+}
+
+/* BUTTONS */
+
+.button-wrap{
+    padding:0 34px 50px;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.btn{
+    height:58px;
+    border-radius:18px;
+    text-decoration:none;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    font-size:15px;
+    font-weight:600;
+    transition:0.25s;
+}
+
+.btn-instagram{
+    background:#fff;
+    border:1px solid #d9e0ee;
+    color:#142d85;
+}
+
+.btn-kakao{
+    background:#FEE500;
+    color:#111;
+}
+
+.btn:active{
+    transform:scale(0.98);
+}
+
+/* FOOTER */
+
+.footer{
+    padding:42px 20px;
+    background:#fafbfd;
+    text-align:center;
+}
+
+.footer-logo{
+    width:130px;
+    margin:0 auto 18px;
+    opacity:0.9;
+}
+
+.footer-logo img{
+    width:100%;
+}
+
+.footer-text{
+    font-size:11px;
+    color:#999;
+    letter-spacing:0.5px;
+}
+
+/* ANIMATION */
+
+.fade-up{
+    opacity:0;
+    transform:translateY(20px);
+    animation:fadeUp 0.8s forwards;
+}
+
+.delay-1{
+    animation-delay:0.2s;
+}
+
+.delay-2{
+    animation-delay:0.4s;
+}
+
+.delay-3{
+    animation-delay:0.6s;
+}
+
+@keyframes fadeUp{
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+</style>
 </head>
+
 <body>
 
-    <div class="invitation-container fade-in">
-        
-        <!-- [상단] 오리지널 매트 인카블루 영역 -->
-        <header class="header-section">
-            <div class="top-logo">
-                <img src="logo_top.png" alt="인카금융서비스">
-            </div>
-            <div class="invitation-text">Invitation</div>
-            <h1 class="main-title">
-                <span class="title-brand">2026 인카금융</span>
-                <span class="title-event">드림라이프총괄 환영식</span>
-            </h1>
-            <p class="sub-title">귀하를 정중히 초대합니다</p>
-        </header>
+<div class="invitation-wrap">
 
-        <!-- [중간] 모던 미니멀 시티 룩 영역 -->
-        <div class="middle-content-section">
-            
-            <!-- 1. 일시 및 장소 -->
-            <section class="info-section">
-                <div class="info-card">
-                    <div class="info-row">
-                        <div class="info-icon-box">
-                            <i class="fa-regular fa-calendar"></i>
-                        </div>
-                        <div class="info-text-group">
-                            <span class="info-label">일 시</span>
-                            <p class="info-value">2026년 6월 22일(월) 오후 3시</p>
-                        </div>
-                    </div>
-                    <div class="info-row">
-                        <div class="info-icon-box">
-                            <i class="fa-solid fa-location-dot"></i>
-                        </div>
-                        <div class="info-text-group">
-                            <span class="info-label">장 소</span>
-                            <p class="info-value">광주 김대중컨벤션센터 4F 컨벤션홀</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+    <!-- HERO -->
+    <section class="hero">
 
-            <!-- 미니멀리즘 슬림 선 분할 -->
-            <div class="divider"></div>
-
-            <!-- 2. 본문 내용 -->
-            <section class="greeting-section">
-                <p class="greeting-text">
-                    안녕하십니까,<br>
-                    인카금융서비스의 새로운 가족이 되신<br>
-                    <span class="greeting-highlight">드림라이프총괄</span> 여러분을 진심으로 환영합니다.<br>
-                    <br>
-                    2026년, 우리는 변화하는 금융 시장 속에서<br>
-                    차별화된 비전과 강력한 파트너십을 바탕으로<br>
-                    또 한 번의 위대한 도약을 준비하고 있습니다.<br>
-                    <br>
-                    그 챌린징하고 설레는 첫걸음이자,<br>
-                    양사가 함께 만들어갈 찬란한 미래의 서막을<br>
-                    기념하기 위해 뜻깊은 환영의 자리를 마련하였습니다.<br>
-                    <br>
-                    새로운 비전과 열정을 공유하는 이 특별한 순간에<br>
-                    기쁜 마음으로 참석하시어,<br>
-                    자리를 함께 빛내주시고 따뜻한 격려와<br>
-                    축하를 나누어 주시기를 정중히 청합니다.
-                </p>
-            </section>
-
-            <!-- 3. [변경] 실제 인카금융 공식 주소가 연동된 SNS 링크 버튼 -->
-            <section class="sns-link-section">
-                <a href="https://www.instagram.com/incar.finance/" target="_blank" class="sns-btn instagram">
-                    <i class="fab fa-instagram"></i> 공식 인스타그램 바로가기
-                </a>
-                <a href="https://pf.kakao.com/_JPyxhX" target="_blank" class="sns-btn kakaotalk">
-                    <i class="fas fa-comment"></i> 카카오톡 채널 추가하기
-                </a>
-            </section>
-            
+        <div class="logo fade-up">
+            <img src="logo_top.png" alt="인카금융서비스">
         </div>
 
-        <!-- [하단] 오리지널 매트 인카블루 영역 -->
-        <footer class="footer-section">
-            <div class="bottom-logo">
-                <img src="logo_bottom.png" alt="인카금융서비스 로고">
-            </div>
-            <div class="copyright">
-                © 2026 INCAR Financial Services Inc. All Rights Reserved.
-            </div>
-        </footer>
+        <div class="label fade-up delay-1">
+            INVITATION
+        </div>
 
-    </div>
+        <h1 class="hero-title fade-up delay-1">
+            새로운 시작,<br>
+            <span>함께하는 미래</span>
+        </h1>
+
+        <p class="hero-sub fade-up delay-2">
+            드림라이프총괄의 새로운 출발을 축하하며,<br>
+            인카금융서비스와 함께 만들어갈<br>
+            특별한 순간에 여러분을 초대합니다.
+        </p>
+
+    </section>
+
+    <!-- DATE -->
+    <section class="date-card fade-up delay-2">
+
+        <div class="date-top">
+
+            <div class="date-number">
+                22
+            </div>
+
+            <div class="date-info">
+                <div class="date-month">
+                    JUNE
+                </div>
+
+                <div class="date-year">
+                    2026
+                </div>
+            </div>
+
+        </div>
+
+        <div class="date-bottom">
+
+            <div class="date-time">
+                MONDAY · PM 3:00
+            </div>
+
+            <div class="date-location">
+                광주 김대중컨벤션센터<br>
+                4F 컨벤션홀
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTENT -->
+    <section class="content fade-up delay-3">
+
+        <div class="section-title">
+            WELCOME MESSAGE
+        </div>
+
+        <p class="message">
+            서로의 비전과 열정이 하나로 이어지는 자리,<br>
+            새로운 도약의 시작을 함께해 주시기 바랍니다.<br><br>
+
+            여러분과 함께할 이 특별한 순간이<br>
+            더욱 빛날 수 있도록<br>
+            귀한 걸음 부탁드립니다.
+        </p>
+
+        <div class="divider"></div>
+
+        <!-- INFO -->
+        <div class="info-box">
+
+            <div class="info-item">
+
+                <div class="icon">
+                    <i class="fa-regular fa-calendar"></i>
+                </div>
+
+                <div>
+                    <div class="info-label">
+                        행사 일정
+                    </div>
+
+                    <div class="info-value">
+                        2026년 6월 22일(월)<br>
+                        오후 3시
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="info-item">
+
+                <div class="icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+
+                <div>
+                    <div class="info-label">
+                        행사 장소
+                    </div>
+
+                    <div class="info-value">
+                        광주 김대중컨벤션센터<br>
+                        4층 컨벤션홀
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- BUTTON -->
+    <section class="button-wrap fade-up delay-3">
+
+        <a
+            href="https://www.instagram.com/incar.finance/"
+            target="_blank"
+            class="btn btn-instagram"
+        >
+            <i class="fab fa-instagram"></i>
+            공식 인스타그램
+        </a>
+
+        <a
+            href="https://pf.kakao.com/_JPyxhX"
+            target="_blank"
+            class="btn btn-kakao"
+        >
+            <i class="fas fa-comment"></i>
+            카카오톡 채널
+        </a>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-logo">
+            <img src="logo_bottom.png" alt="인카금융서비스">
+        </div>
+
+        <div class="footer-text">
+            © 2026 INCAR Financial Services
+        </div>
+
+    </footer>
+
+</div>
 
 </body>
 </html>
