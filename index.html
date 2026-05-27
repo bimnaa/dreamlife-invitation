@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2026 인카금융 드림라이프총괄 환영식 초청장</title>
-    <!-- 구글 폰트 적용 (Noto Sans KR, Gowun Batang) -->
+    <!-- 구글 폰트 적용 (Noto Sans KR, Gowun Batang, 그리고 Invitation용 Alex Brush 필기체) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Gowun+Batang:wght@400;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
     
     <style>
         /* 기본 스타일 초기화 */
@@ -18,7 +18,7 @@
         }
         body {
             font-family: 'Noto Sans KR', sans-serif;
-            background-color: #f8f9fa;
+            background-color: #f4f6f9;
             color: #333333;
             line-height: 1.6;
             display: flex;
@@ -27,37 +27,51 @@
             min-height: 100vh;
         }
 
-        /* 모바일 최적화 컨테이너 (최대 가로폭 430px - 아이폰/갤럭시 기준) */
+        /* 모바일 최적화 컨테이너 */
         .invitation-container {
             width: 100%;
             max-width: 430px;
             background-color: #ffffff;
-            box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 10px 40px rgba(20, 45, 133, 0.08);
             min-height: 100vh;
             display: flex;
             flex-direction: column;
             overflow-x: hidden;
         }
 
-        /* 상단 메인 섹션 */
+        /* 상단 메인 섹션 (인카블루 배경) */
         .header-section {
-            background-color: #0A2342; /* 인카금융 신뢰감을 주는 네이비 */
+            background-color: #142d85; /* 인카블루 */
             color: #ffffff;
             text-align: center;
-            padding: 60px 20px;
+            padding: 50px 20px 50px 20px;
             position: relative;
         }
-        .company-tag {
-            font-size: 14px;
-            font-weight: 500;
-            letter-spacing: 3px;
-            color: #D4AF37; /* 고급스러운 골드 포인트 */
-            margin-bottom: 20px;
-            text-transform: uppercase;
+        
+        /* 상단 로고 스타일 (정사각형 또는 심볼형 권장) */
+        .top-logo {
+            max-width: 130px;
+            margin: 0 auto 15px auto;
         }
+        .top-logo img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* Invitation 필기체 디자인 요소 */
+        .invitation-text {
+            font-family: 'Alex Brush', cursive;
+            font-size: 42px;
+            color: #E6C663; /* 은은한 골드 */
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+            opacity: 0.9;
+        }
+
         .main-title {
             font-family: 'Gowun Batang', serif;
-            font-size: 24px;
+            font-size: 25px;
             font-weight: 700;
             line-height: 1.5;
             margin-bottom: 25px;
@@ -65,84 +79,112 @@
         }
         .sub-title {
             font-size: 15px;
-            font-weight: 300;
-            color: #e0e0e0;
+            font-weight: 400;
+            color: #ffffff;
             letter-spacing: 0.5px;
-        }
-
-        /* 중간 구분선 스타일 */
-        .divider {
-            text-align: center;
-            margin: 40px 0;
-        }
-        .divider::after {
-            content: "";
+            background: rgba(255, 255, 255, 0.1);
             display: inline-block;
-            width: 40px;
-            height: 1px;
-            background-color: #D4AF37;
+            padding: 6px 22px;
+            border-radius: 30px;
+            border: 1px solid rgba(230, 198, 99, 0.5); /* 골드 테두리 */
         }
 
-        /* 초대의 글 섹션 */
-        .greeting-section {
-            padding: 20px 30px;
-            text-align: center;
-        }
-        .greeting-text {
-            font-family: 'Gowun Batang', serif;
-            font-size: 16px;
-            color: #4A4A4A;
-            line-height: 2;
-            word-break: keep-all;
-        }
-
-        /* 일시 및 장소 상세 섹션 */
+        /* 1. 일시 및 장소 섹션 (상단 배치로 변경) */
         .info-section {
-            background-color: #F9FAFB;
-            margin: 40px 20px;
-            padding: 30px 20px;
-            border-radius: 12px;
-            border: 1px solid #ededed;
+            background-color: #ffffff;
+            padding: 45px 25px 20px 25px;
+            text-align: center;
         }
         .info-box {
-            margin-bottom: 25px;
-            text-align: center;
-        }
-        .info-box:last-child {
-            margin-bottom: 0;
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         .info-label {
-            font-size: 13px;
+            font-size: 12px;
             font-weight: 700;
-            color: #0A2342;
-            letter-spacing: 1px;
-            margin-bottom: 6px;
-            text-transform: uppercase;
+            color: #142d85; /* 인카블루 크기의 라벨 */
+            letter-spacing: 2px;
+            margin-bottom: 8px;
+            border: 1px solid #142d85;
+            padding: 2px 12px;
+            border-radius: 4px;
+            background-color: rgba(20, 45, 133, 0.03);
         }
         .info-value {
             font-size: 16px;
             font-weight: 500;
-            color: #222222;
+            color: #111111;
+            line-height: 1.5;
         }
 
-        /* 하단 푸터 */
+        /* 중간 디자인 구분선 (골드 라인 + 다이아몬드) */
+        .divider {
+            text-align: center;
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .divider .line {
+            width: 40px;
+            height: 1px;
+            background-color: #D4AF37;
+        }
+        .divider .dot {
+            width: 4px;
+            height: 4px;
+            background-color: #D4AF37;
+            transform: rotate(45deg);
+            margin: 0 10px;
+        }
+
+        /* 2. 초대의 글 섹션 (하단 배치로 변경) */
+        .greeting-section {
+            padding: 20px 30px 60px 30px;
+            text-align: center;
+            background-color: #FAFBFD; /* 은은한 배경 분리 */
+        }
+        .greeting-text {
+            font-family: 'Gowun Batang', serif;
+            font-size: 15.5px;
+            color: #333333;
+            line-height: 2.2;
+            word-break: keep-all;
+        }
+
+        /* 하단 푸터 (가로로 긴 로고 배치) */
         .footer-section {
             margin-top: auto;
-            padding: 40px 20px;
+            padding: 40px 20px 35px 20px;
             text-align: center;
-            background-color: #ffffff;
-            font-size: 13px;
-            color: #888888;
-            letter-spacing: 1px;
+            background-color: #142d85; /* 인카블루 푸터 */
+            border-top: 4px solid #D4AF37; /* 푸터 상단 골드 라인 */
+        }
+        .bottom-logo {
+            max-width: 180px; /* 가로로 긴 로고 크기 조절 */
+            margin: 0 auto 15px auto;
+            opacity: 0.9;
+        }
+        .bottom-logo img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .copyright {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 11px;
+            letter-spacing: 0.5px;
         }
 
         /* 부드러운 등장 애니메이션 */
         .fade-in {
-            animation: fadeIn ease 1.5s;
-            -webkit-animation: fadeIn ease 1.5s;
+            animation: fadeIn ease 1.2s;
+            -webkit-animation: fadeIn ease 1.2s;
         }
         @keyframes fadeIn {
-            0% { opacity: 0; transform: translateY(10px); }
+            0% { opacity: 0; transform: translateY(15px); }
             100% { opacity: 1; transform: translateY(0); }
         }
     </style>
@@ -151,9 +193,14 @@
 
     <div class="invitation-container fade-in">
         
-        <!-- 상단 메인 비주얼 -->
+        <!-- 상단 메인 비주얼 (인카블루) -->
         <header class="header-section">
-            <div class="company-tag">Incar Financial Service</div>
+            <!-- 상단 로고 (심볼이나 작은 로고) -->
+            <div class="top-logo">
+                <img src="logo_top.png" alt="인카금융서비스">
+            </div>
+            <!-- Invitation 디자인 타이포 추가 -->
+            <div class="invitation-text">Invitation</div>
             <h1 class="main-title">
                 2026 인카금융<br>
                 드림라이프총괄 환영식
@@ -161,9 +208,27 @@
             <p class="sub-title">귀하를 정중히 초대합니다.</p>
         </header>
 
-        <!-- 본문 내용 (초대의 글) -->
+        <!-- 1. 안내 정보 (일시/장소) -->
+        <section class="info-section">
+            <div class="info-box">
+                <span class="info-label">일시</span>
+                <p class="info-value">2026년 6월 22일(월) 오후 3시</p>
+            </div>
+            <div class="info-box">
+                <span class="info-label">장소</span>
+                <p class="info-value">광주 김대중컨벤션센터<br>4F 컨벤션홀</p>
+            </div>
+        </section>
+
+        <!-- 중간 고급 구분선 -->
+        <div class="divider">
+            <div class="line"></div>
+            <div class="dot"></div>
+            <div class="line"></div>
+        </div>
+
+        <!-- 2. 본문 내용 (새로운 시작...) -->
         <section class="greeting-section">
-            <div class="divider"></div>
             <p class="greeting-text">
                 새로운 시작,<br>
                 그리고 더 큰 미래를 향한 도약.<br>
@@ -174,24 +239,17 @@
                 부디 참석하시어<br>
                 뜻깊은 자리를 함께 빛내주시기 바랍니다.
             </p>
-            <div class="divider"></div>
         </section>
 
-        <!-- 안내 정보 (일시/장소) -->
-        <section class="info-section">
-            <div class="info-box">
-                <div class="info-label">WHEN</div>
-                <div class="info-value">2026년 6월 22일(월) 오후 3시</div>
-            </div>
-            <div class="info-box">
-                <div class="info-label">WHERE</div>
-                <div class="info-value">광주 김대중컨벤션센터 4F 컨벤션홀</div>
-            </div>
-        </section>
-
-        <!-- 하단 정보 -->
+        <!-- 하단 푸터 (가로형 로고 적용) -->
         <footer class="footer-section">
-            © 2026 INCAR Financial Services Inc.
+            <!-- 하단 가로형 로고 이미지 위치 -->
+            <div class="bottom-logo">
+                <img src="logo_bottom.png" alt="인카금융서비스 로고">
+            </div>
+            <div class="copyright">
+                © 2026 INCAR Financial Services Inc. All Rights Reserved.
+            </div>
         </footer>
 
     </div>
