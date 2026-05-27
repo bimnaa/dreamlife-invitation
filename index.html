@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2026 인카금융 드림라이프총괄 환영식 초청장</title>
-    <!-- 구글 폰트 적용 (Noto Sans KR, Gowun Batang, 그리고 Invitation용 Alex Brush 필기체) -->
+    <!-- 구글 폰트 및 아이콘 라이브러리(Font Awesome) 로드 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Gowun+Batang:wght@400;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&family=Song+Myung&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
         /* 기본 스타일 초기화 */
@@ -18,7 +19,7 @@
         }
         body {
             font-family: 'Noto Sans KR', sans-serif;
-            background-color: #f4f6f9;
+            background-color: #eef1f6;
             color: #333333;
             line-height: 1.6;
             display: flex;
@@ -32,140 +33,204 @@
             width: 100%;
             max-width: 430px;
             background-color: #ffffff;
-            box-shadow: 0 10px 40px rgba(20, 45, 133, 0.08);
+            box-shadow: 0 15px 50px rgba(20, 45, 133, 0.12);
             min-height: 100vh;
             display: flex;
             flex-direction: column;
             overflow-x: hidden;
+            border: 10px solid #ffffff; 
+            outline: 1px solid #D4AF37; 
+            outline-offset: -10px;
         }
 
-        /* 상단 메인 섹션 (인카블루 배경) */
+        /* 상단 메인 섹션 */
         .header-section {
-            background-color: #142d85; /* 인카블루 */
-            color: #ffffff;
+            background-color: #ffffff; 
             text-align: center;
-            padding: 50px 20px 50px 20px;
+            padding: 70px 20px 40px 20px;
             position: relative;
         }
-        
-        /* 상단 로고 스타일 (정사각형 또는 심볼형 권장) */
         .top-logo {
-            max-width: 130px;
-            margin: 0 auto 15px auto;
+            max-width: 155px;
+            margin: 0 auto 25px auto;
         }
         .top-logo img {
             width: 100%;
             height: auto;
             display: block;
         }
-        
-        /* Invitation 필기체 디자인 요소 */
         .invitation-text {
-            font-family: 'Alex Brush', cursive;
-            font-size: 42px;
-            color: #E6C663; /* 은은한 골드 */
-            margin-bottom: 5px;
-            letter-spacing: 1px;
-            opacity: 0.9;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 32px;
+            font-weight: 500;
+            color: #D4AF37; 
+            margin-bottom: 12px;
+            letter-spacing: 2px;
         }
-
         .main-title {
-            font-family: 'Gowun Batang', serif;
+            font-family: 'Song Myung', serif;
             font-size: 25px;
-            font-weight: 700;
-            line-height: 1.5;
-            margin-bottom: 25px;
-            letter-spacing: -0.5px;
+            font-weight: 400;
+            line-height: 1.6;
+            color: #142d85; 
+            margin-bottom: 28px;
+            word-break: keep-all;
         }
         .sub-title {
-            font-size: 15px;
-            font-weight: 400;
-            color: #ffffff;
-            letter-spacing: 0.5px;
-            background: rgba(255, 255, 255, 0.1);
+            font-size: 13px;
+            font-weight: 500;
+            color: #D4AF37; 
+            letter-spacing: 3px;
+            border-top: 1px solid rgba(212, 175, 55, 0.6);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.6);
             display: inline-block;
-            padding: 6px 22px;
-            border-radius: 30px;
-            border: 1px solid rgba(230, 198, 99, 0.5); /* 골드 테두리 */
+            padding: 6px 28px;
+            text-transform: uppercase;
         }
 
-        /* 1. 일시 및 장소 섹션 (상단 배치로 변경) */
+        /* 일시 및 장소 섹션 */
         .info-section {
             background-color: #ffffff;
-            padding: 45px 25px 20px 25px;
+            padding: 25px 25px 15px 25px;
             text-align: center;
         }
+        .info-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f7f9fc 100%);
+            border: 1px solid rgba(20, 45, 133, 0.06);
+            border-top: 3px solid #142d85; 
+            border-radius: 6px;
+            padding: 32px 20px;
+            box-shadow: 0 6px 20px rgba(20, 45, 133, 0.03);
+        }
         .info-box {
-            margin-bottom: 30px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            margin-bottom: 25px;
+        }
+        .info-box:last-child {
+            margin-bottom: 0;
         }
         .info-label {
-            font-size: 12px;
+            font-size: 11px;
             font-weight: 700;
-            color: #142d85; /* 인카블루 크기의 라벨 */
+            color: #D4AF37; 
             letter-spacing: 2px;
-            margin-bottom: 8px;
-            border: 1px solid #142d85;
-            padding: 2px 12px;
-            border-radius: 4px;
-            background-color: rgba(20, 45, 133, 0.03);
+            margin-bottom: 6px;
+            display: block;
         }
         .info-value {
-            font-size: 16px;
+            font-size: 15.5px;
             font-weight: 500;
-            color: #111111;
+            color: #142d85; 
             line-height: 1.5;
         }
 
-        /* 중간 디자인 구분선 (골드 라인 + 다이아몬드) */
+        /* 중간 디자인 구분선 */
         .divider {
             text-align: center;
-            margin: 20px 0;
+            margin: 35px 0;
             display: flex;
             align-items: center;
             justify-content: center;
         }
         .divider .line {
-            width: 40px;
+            width: 45px;
             height: 1px;
-            background-color: #D4AF37;
+            background: linear-gradient(to right, rgba(212,175,55,0), rgba(212,175,55,1));
         }
-        .divider .dot {
-            width: 4px;
-            height: 4px;
-            background-color: #D4AF37;
+        .divider .line.right {
+            background: linear-gradient(to left, rgba(212,175,55,0), rgba(212,175,55,1));
+        }
+        .divider .crown {
+            font-size: 11px;
+            color: #D4AF37;
+            margin: 0 12px;
             transform: rotate(45deg);
-            margin: 0 10px;
         }
 
-        /* 2. 초대의 글 섹션 (하단 배치로 변경) */
+        /* 초대의 글 섹션 */
         .greeting-section {
-            padding: 20px 30px 60px 30px;
+            padding: 10px 35px 40px 35px;
             text-align: center;
-            background-color: #FAFBFD; /* 은은한 배경 분리 */
+        }
+        .greeting-title {
+            font-family: 'Song Myung', serif;
+            font-size: 18px;
+            font-weight: 400;
+            color: #142d85;
+            margin-bottom: 30px;
+            letter-spacing: 1px;
         }
         .greeting-text {
-            font-family: 'Gowun Batang', serif;
-            font-size: 15.5px;
+            font-family: 'Song Myung', serif;
+            font-size: 15px;
             color: #333333;
-            line-height: 2.2;
+            line-height: 2.4;
             word-break: keep-all;
         }
+        .greeting-highlight {
+            color: #142d85;
+            font-weight: bold;
+            border-bottom: 1px dashed #D4AF37;
+            padding-bottom: 2px;
+        }
 
-        /* 하단 푸터 (가로로 긴 로고 배치) */
+        /* [신규] SNS 버튼 섹션 디자인 스타일 */
+        .sns-link-section {
+            padding: 0 35px 60px 35px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .sns-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            padding: 14px 0;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+        /* 인스타그램 버튼: 화이트&골드/네이비 톤 앤 매너 유지 */
+        .sns-btn.instagram {
+            background-color: #ffffff;
+            color: #142d85;
+            border: 1px solid rgba(20, 45, 133, 0.2);
+        }
+        .sns-btn.instagram i {
+            color: #E1306C; /* 인스타 고유 포인트 컬러 */
+            font-size: 16px;
+        }
+        /* 카카오톡 버튼: 카카오 고유 시그니처 옐로우 */
+        .sns-btn.kakaotalk {
+            background-color: #FEE500;
+            color: #191919;
+            border: none;
+        }
+        .sns-btn.kakaotalk i {
+            font-size: 16px;
+        }
+        .sns-btn:active {
+            transform: scale(0.98);
+            opacity: 0.9;
+        }
+
+        /* 하단 푸터 */
         .footer-section {
             margin-top: auto;
-            padding: 40px 20px 35px 20px;
+            padding: 45px 20px 40px 20px;
             text-align: center;
-            background-color: #142d85; /* 인카블루 푸터 */
-            border-top: 4px solid #D4AF37; /* 푸터 상단 골드 라인 */
+            background-color: #142d85; 
+            border-top: 3px solid #D4AF37; 
         }
         .bottom-logo {
-            max-width: 180px; /* 가로로 긴 로고 크기 조절 */
-            margin: 0 auto 15px auto;
-            opacity: 0.9;
+            max-width: 165px;
+            margin: 0 auto 18px auto;
+            filter: brightness(0) invert(1); 
         }
         .bottom-logo img {
             width: 100%;
@@ -173,7 +238,7 @@
             display: block;
         }
         .copyright {
-            color: rgba(255, 255, 255, 0.5);
+            color: rgba(255, 255, 255, 0.4);
             font-size: 11px;
             letter-spacing: 0.5px;
         }
@@ -193,57 +258,77 @@
 
     <div class="invitation-container fade-in">
         
-        <!-- 상단 메인 비주얼 (인카블루) -->
+        <!-- 상단 메인 비주얼 -->
         <header class="header-section">
-            <!-- 상단 로고 (심볼이나 작은 로고) -->
             <div class="top-logo">
                 <img src="logo_top.png" alt="인카금융서비스">
             </div>
-            <!-- Invitation 디자인 타이포 추가 -->
             <div class="invitation-text">Invitation</div>
             <h1 class="main-title">
                 2026 인카금융<br>
                 드림라이프총괄 환영식
             </h1>
-            <p class="sub-title">귀하를 정중히 초대합니다.</p>
+            <p class="sub-title">귀하를 정중히 초대합니다</p>
         </header>
 
-        <!-- 1. 안내 정보 (일시/장소) -->
+        <!-- 1. 안내 정보 -->
         <section class="info-section">
-            <div class="info-box">
-                <span class="info-label">일시</span>
-                <p class="info-value">2026년 6월 22일(월) 오후 3시</p>
-            </div>
-            <div class="info-box">
-                <span class="info-label">장소</span>
-                <p class="info-value">광주 김대중컨벤션센터<br>4F 컨벤션홀</p>
+            <div class="info-card">
+                <div class="info-box">
+                    <span class="info-label">일 시</span>
+                    <p class="info-value">2026년 6월 22일(월) 오후 3시</p>
+                </div>
+                <div class="info-box">
+                    <span class="info-label">장 소</span>
+                    <p class="info-value">광주 김대중컨벤션센터<br>4F 컨벤션홀</p>
+                </div>
             </div>
         </section>
 
         <!-- 중간 고급 구분선 -->
         <div class="divider">
             <div class="line"></div>
-            <div class="dot"></div>
-            <div class="line"></div>
+            <span class="crown">◆</span>
+            <div class="line right"></div>
         </div>
 
-        <!-- 2. 본문 내용 (새로운 시작...) -->
+        <!-- 2. 본문 내용 -->
         <section class="greeting-section">
+            <h2 class="greeting-title">새로운 시작, 그리고 더 큰 미래</h2>
             <p class="greeting-text">
-                새로운 시작,<br>
-                그리고 더 큰 미래를 향한 도약.<br>
+                안녕하십니까, 인카금융서비스입니다.<br>
+                푸르른 녹음이 짙어가는 눈부신 계절을 맞아,<br>
+                인카금융서비스의 새로운 가족이 되신<br>
+                <span class="greeting-highlight">드림라이프총괄</span> 여러분을 진심으로 환영합니다.<br>
                 <br>
-                드림라이프와 인카금융서비스가 함께 만들어갈<br>
-                새로운 비전의 순간에 여러분을 모십니다.<br>
+                2026년, 우리는 변화하는 금융 시장 속에서<br>
+                차별화된 비전과 강력한 파트너십을 바탕으로<br>
+                또 한 번의 위대한 도약을 준비하고 있습니다.<br>
                 <br>
-                부디 참석하시어<br>
-                뜻깊은 자리를 함께 빛내주시기 바랍니다.
+                그 챌린징하고 설레는 첫걸음이자,<br>
+                양사가 함께 만들어갈 찬란한 미래의 서막을<br>
+                기념하기 위해 뜻깊은 환영의 자리를 마련하였습니다.<br>
+                <br>
+                새로운 비전과 열정을 공유하는 이 특별한 순간에<br>
+                기쁜 마음으로 참석하시어,<br>
+                자리를 함께 빛내주시고 따뜻한 격려와<br>
+                축하를 나누어 주시기를 정중히 청합니다.
             </p>
         </section>
 
-        <!-- 하단 푸터 (가로형 로고 적용) -->
+        <!-- 3. [신규] 인스타그램 & 카카오톡 채널 추가 버튼 섹션 -->
+        <!-- href="#" 부분의 # 자리에 실제 인스타그램 주소와 카카오 채널 주소를 넣어주시면 됩니다! -->
+        <section class="sns-link-section">
+            <a href="https://https://www.instagram.com/incar.finance/인카계정주소" target="_blank" class="sns-btn instagram">
+                <i class="fab fa-instagram"></i> 인카금융서비스 공식 인스타그램
+            </a>
+            <a href="https://pf.kakao.com/_JPyxhX" target="_blank" class="sns-btn kakaotalk">
+                <i class="fas fa-comment"></i> 카카오톡 채널 추가하기
+            </a>
+        </section>
+
+        <!-- 하단 푸터 -->
         <footer class="footer-section">
-            <!-- 하단 가로형 로고 이미지 위치 -->
             <div class="bottom-logo">
                 <img src="logo_bottom.png" alt="인카금융서비스 로고">
             </div>
