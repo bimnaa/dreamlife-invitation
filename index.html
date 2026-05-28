@@ -1,4 +1,4 @@
-```html
+```html id="9y3hkc"
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -26,7 +26,7 @@ body{
     background:#edf1f5;
     font-family:'Noto Sans KR', sans-serif;
     color:#111;
-    padding:24px;
+    padding:22px;
 }
 
 .invitation-wrap{
@@ -45,7 +45,7 @@ body{
 
 .hero{
     position:relative;
-    padding:74px 34px 68px;
+    padding:72px 34px 64px;
 
     background:
     linear-gradient(
@@ -72,8 +72,8 @@ body{
 }
 
 .logo{
-    width:170px;
-    margin-bottom:58px;
+    width:168px;
+    margin-bottom:56px;
     position:relative;
     z-index:2;
 }
@@ -90,14 +90,14 @@ body{
 
     color:#C8A96B;
 
-    margin-bottom:20px;
+    margin-bottom:18px;
 
     position:relative;
     z-index:2;
 }
 
 .hero-title{
-    font-size:38px;
+    font-size:34px;
     line-height:1.35;
     letter-spacing:-2px;
     font-weight:800;
@@ -111,7 +111,7 @@ body{
     width:64px;
     height:2px;
 
-    margin:30px 0;
+    margin:28px 0;
 
     border-radius:999px;
 
@@ -127,11 +127,11 @@ body{
 }
 
 .hero-copy{
-    font-size:23px;
+    font-size:22px;
     line-height:1.6;
     font-weight:700;
     color:#142d85;
-    margin-bottom:24px;
+    margin-bottom:22px;
 
     position:relative;
     z-index:2;
@@ -303,69 +303,10 @@ body{
     line-height:1.7;
 }
 
-/* BUTTON */
-
-.button-wrap{
-    padding:0 34px 54px;
-
-    display:flex;
-    flex-direction:column;
-    gap:14px;
-}
-
-.btn{
-    height:60px;
-
-    border-radius:20px;
-
-    text-decoration:none;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:10px;
-
-    font-size:15px;
-    font-weight:700;
-
-    transition:0.25s;
-}
-
-.btn-instagram{
-    background:
-    linear-gradient(
-        135deg,
-        #ff2f92 0%,
-        #c13584 55%,
-        #833ab4 100%
-    );
-
-    color:#fff;
-
-    box-shadow:
-    0 14px 26px rgba(193,53,132,0.22);
-}
-
-.btn-kakao{
-    background:#FEE500;
-    color:#111;
-}
-
-.channel-guide{
-    margin-top:10px;
-
-    text-align:center;
-
-    font-size:13px;
-    line-height:1.9;
-
-    color:#7b8190;
-}
-
 /* LOCATION */
 
 .location-section{
-    padding:0 34px 64px;
+    padding:0 34px 60px;
 }
 
 .location-title{
@@ -377,9 +318,9 @@ body{
 }
 
 .location-sub{
-    font-size:30px;
+    font-size:28px;
     font-weight:800;
-    margin-bottom:30px;
+    margin-bottom:28px;
 }
 
 .kakao-map-wrap{
@@ -436,6 +377,63 @@ body{
     color:#555;
 }
 
+/* BUTTON */
+
+.button-wrap{
+    padding:0 34px 56px;
+
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+}
+
+.btn{
+    height:58px;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+
+    font-size:15px;
+    font-weight:700;
+}
+
+.btn-instagram{
+    background:
+    linear-gradient(
+        135deg,
+        #ff2f92 0%,
+        #c13584 55%,
+        #833ab4 100%
+    );
+
+    color:#fff;
+
+    box-shadow:
+    0 14px 26px rgba(193,53,132,0.22);
+}
+
+.btn-kakao{
+    background:#FEE500;
+    color:#111;
+}
+
+.channel-guide{
+    margin-top:10px;
+
+    text-align:center;
+
+    font-size:13px;
+    line-height:1.9;
+
+    color:#7b8190;
+}
+
 /* FOOTER */
 
 .footer{
@@ -470,11 +468,11 @@ body{
 @media(max-width:390px){
 
     .hero-title{
-        font-size:34px;
+        font-size:31px;
     }
 
     .hero-copy{
-        font-size:21px;
+        font-size:20px;
     }
 
     .message{
@@ -490,6 +488,7 @@ body{
 
 <div class="invitation-wrap">
 
+<!-- HERO -->
 <section class="hero">
 
 <div class="logo">
@@ -519,6 +518,7 @@ INVITATION
 
 </section>
 
+<!-- DATE -->
 <section class="date-card">
 
 <div class="date-top">
@@ -557,6 +557,7 @@ JUNE
 
 </section>
 
+<!-- CONTENT -->
 <section class="content">
 
 <div class="section-title">
@@ -618,33 +619,7 @@ WELCOME MESSAGE
 
 </section>
 
-<section class="button-wrap">
-
-<a
-href="https://www.instagram.com/incar.finance/"
-target="_blank"
-class="btn btn-instagram"
->
-<i class="fab fa-instagram"></i>
-공식 인스타그램
-</a>
-
-<a
-href="https://pf.kakao.com/_JPyxhX"
-target="_blank"
-class="btn btn-kakao"
->
-<i class="fas fa-comment"></i>
-카카오톡 채널
-</a>
-
-<p class="channel-guide">
-인카금융서비스 공식 채널을 통해<br>
-다양한 소식과 영업 콘텐츠를 받아보세요.
-</p>
-
-</section>
-
+<!-- LOCATION -->
 <section class="location-section">
 
 <div class="location-title">
@@ -716,6 +691,35 @@ class="root_daum_roughmap root_daum_roughmap_landing">
 
 </section>
 
+<!-- BUTTON -->
+<section class="button-wrap">
+
+<a
+href="https://www.instagram.com/incar.finance/"
+target="_blank"
+class="btn btn-instagram"
+>
+<i class="fab fa-instagram"></i>
+INSTAGRAM
+</a>
+
+<a
+href="https://pf.kakao.com/_JPyxhX"
+target="_blank"
+class="btn btn-kakao"
+>
+<i class="fas fa-comment"></i>
+KAKAO CHANNEL
+</a>
+
+<p class="channel-guide">
+인카금융서비스 공식 채널을 통해<br>
+다양한 소식과 영업 콘텐츠를 받아보세요.
+</p>
+
+</section>
+
+<!-- FOOTER -->
 <footer class="footer">
 
 <div class="footer-logo">
@@ -730,6 +734,7 @@ class="root_daum_roughmap root_daum_roughmap_landing">
 
 </div>
 
+<!-- 카카오맵 -->
 <script charset="UTF-8"
 src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js">
 </script>
@@ -739,7 +744,7 @@ new daum.roughmap.Lander({
 "timestamp" : "1779942234482",
 "key" : "oj3386mfe82",
 "mapWidth" : "100%",
-"mapHeight" : "360"
+"mapHeight" : "280"
 }).render();
 </script>
 
