@@ -23,7 +23,7 @@
 }
 
 body{
-    background:#eef2f7;
+    background:#edf1f5;
     font-family:'Noto Sans KR', sans-serif;
     color:#111;
     padding:24px;
@@ -34,37 +34,45 @@ body{
     max-width:430px;
     margin:0 auto;
     background:#fff;
-    border-radius:34px;
+    border-radius:36px;
     overflow:hidden;
-    box-shadow:0 30px 60px rgba(0,0,0,0.08);
+
+    box-shadow:
+    0 35px 70px rgba(0,0,0,0.08);
 }
 
 /* HERO */
 
 .hero{
     position:relative;
-    padding:70px 34px 65px;
-    background:linear-gradient(
+    padding:74px 34px 68px;
+
+    background:
+    linear-gradient(
         180deg,
         #ffffff 0%,
-        #f7f9fc 100%
+        #faf8f3 100%
     );
 }
 
 .hero::after{
     content:'';
     position:absolute;
+
     top:-130px;
     right:-90px;
+
     width:260px;
     height:260px;
+
     background:#142d85;
     opacity:0.05;
+
     border-radius:50%;
 }
 
 .logo{
-    width:165px;
+    width:170px;
     margin-bottom:58px;
     position:relative;
     z-index:2;
@@ -76,58 +84,89 @@ body{
 }
 
 .label{
-    font-size:12px;
-    font-weight:700;
-    letter-spacing:4px;
-    color:#142d85;
-    margin-bottom:18px;
+    font-size:15px;
+    font-weight:800;
+    letter-spacing:5px;
+
+    color:#C8A96B;
+
+    margin-bottom:20px;
+
+    position:relative;
+    z-index:2;
 }
 
 .hero-title{
-    font-size:36px;
+    font-size:38px;
     line-height:1.35;
-    letter-spacing:-1.8px;
+    letter-spacing:-2px;
     font-weight:800;
     color:#111;
+
+    position:relative;
+    z-index:2;
 }
 
 .gold-line{
-    width:58px;
+    width:64px;
     height:2px;
-    margin:28px 0;
+
+    margin:30px 0;
+
     border-radius:999px;
-    background:linear-gradient(
+
+    background:
+    linear-gradient(
         90deg,
         #C8A96B 0%,
         #E8D4A8 100%
     );
+
+    position:relative;
+    z-index:2;
 }
 
 .hero-copy{
-    font-size:22px;
+    font-size:23px;
     line-height:1.6;
     font-weight:700;
     color:#142d85;
-    margin-bottom:22px;
+    margin-bottom:24px;
+
+    position:relative;
+    z-index:2;
 }
 
 .hero-sub{
     font-size:16px;
     line-height:1.9;
     color:#666;
+
+    position:relative;
+    z-index:2;
 }
 
 /* DATE */
 
 .date-card{
     margin:-24px 28px 0;
+
     background:#142d85;
     color:#fff;
-    border-radius:30px;
-    padding:30px;
+
+    border-radius:32px;
+
+    padding:32px;
+
     position:relative;
     z-index:5;
-    box-shadow:0 18px 40px rgba(20,45,133,0.18);
+
+    border:
+    1px solid rgba(232,212,168,0.18);
+
+    box-shadow:
+    0 20px 45px rgba(20,45,133,0.22),
+    0 0 0 1px rgba(232,212,168,0.06);
 }
 
 .date-top{
@@ -136,9 +175,10 @@ body{
 }
 
 .date-number{
-    font-size:64px;
+    font-size:68px;
     font-weight:800;
     line-height:1;
+    letter-spacing:-4px;
 }
 
 .date-info{
@@ -147,20 +187,22 @@ body{
 
 .date-month{
     font-size:14px;
-    opacity:0.75;
-    letter-spacing:2px;
+    opacity:0.72;
+    letter-spacing:3px;
 }
 
 .date-year{
-    font-size:28px;
+    font-size:30px;
     font-weight:700;
     margin-top:6px;
 }
 
 .date-bottom{
-    margin-top:24px;
-    padding-top:22px;
-    border-top:1px solid rgba(255,255,255,0.14);
+    margin-top:26px;
+    padding-top:24px;
+
+    border-top:
+    1px solid rgba(255,255,255,0.14);
 }
 
 .date-time{
@@ -172,36 +214,40 @@ body{
 
 .date-location{
     font-size:15px;
-    line-height:1.7;
+    line-height:1.8;
     opacity:0.88;
 }
 
 /* CONTENT */
 
 .content{
-    padding:58px 34px 42px;
+    padding:60px 34px 44px;
 }
 
 .section-title{
     font-size:13px;
-    font-weight:700;
+    font-weight:800;
     letter-spacing:3px;
-    color:#142d85;
+    color:#C8A96B;
     margin-bottom:24px;
 }
 
 .message{
     font-size:17px;
-    line-height:2;
+    line-height:2.05;
     color:#333;
 }
 
 .divider{
-    width:42px;
+    width:46px;
     height:2px;
-    margin:46px auto;
+
+    margin:50px auto;
+
     border-radius:999px;
-    background:linear-gradient(
+
+    background:
+    linear-gradient(
         90deg,
         #C8A96B 0%,
         #E8D4A8 100%
@@ -210,8 +256,11 @@ body{
 
 .info-box{
     background:#f8fafc;
-    border-radius:26px;
-    padding:26px;
+    border-radius:28px;
+    padding:28px;
+
+    border:
+    1px solid rgba(200,169,107,0.08);
 }
 
 .info-item{
@@ -220,63 +269,81 @@ body{
 }
 
 .info-item + .info-item{
-    margin-top:24px;
+    margin-top:26px;
 }
 
 .icon{
-    width:44px;
-    height:44px;
-    border-radius:15px;
+    width:46px;
+    height:46px;
+
+    border-radius:16px;
+
     background:#fff;
+
     display:flex;
     justify-content:center;
     align-items:center;
-    color:#142d85;
+
+    color:#C8A96B;
     font-size:16px;
-    box-shadow:0 6px 18px rgba(0,0,0,0.05);
+
+    box-shadow:
+    0 8px 20px rgba(0,0,0,0.05);
 }
 
 .info-label{
     font-size:12px;
-    color:#888;
+    color:#999;
     margin-bottom:7px;
 }
 
 .info-value{
     font-size:16px;
     font-weight:700;
-    line-height:1.6;
+    line-height:1.7;
 }
 
 /* BUTTON */
 
 .button-wrap{
-    padding:0 34px 50px;
+    padding:0 34px 54px;
+
     display:flex;
     flex-direction:column;
     gap:14px;
 }
 
 .btn{
-    height:58px;
-    border-radius:18px;
+    height:60px;
+
+    border-radius:20px;
+
     text-decoration:none;
+
     display:flex;
     align-items:center;
     justify-content:center;
     gap:10px;
+
     font-size:15px;
     font-weight:700;
+
+    transition:0.25s;
 }
 
 .btn-instagram{
-    background:linear-gradient(
+    background:
+    linear-gradient(
         135deg,
         #ff2f92 0%,
         #c13584 55%,
         #833ab4 100%
     );
+
     color:#fff;
+
+    box-shadow:
+    0 14px 26px rgba(193,53,132,0.22);
 }
 
 .btn-kakao{
@@ -286,45 +353,53 @@ body{
 
 .channel-guide{
     margin-top:10px;
+
     text-align:center;
+
     font-size:13px;
-    line-height:1.8;
+    line-height:1.9;
+
     color:#7b8190;
 }
 
 /* LOCATION */
 
 .location-section{
-    padding:0 34px 60px;
+    padding:0 34px 64px;
 }
 
 .location-title{
-    font-size:12px;
-    font-weight:700;
+    font-size:13px;
+    font-weight:800;
     letter-spacing:3px;
-    color:#142d85;
+    color:#C8A96B;
     margin-bottom:10px;
 }
 
 .location-sub{
-    font-size:28px;
+    font-size:30px;
     font-weight:800;
-    margin-bottom:28px;
+    margin-bottom:30px;
 }
 
 .kakao-map-wrap{
     overflow:hidden;
-    border-radius:24px;
-    margin-bottom:24px;
+
+    border-radius:28px;
+
+    margin-bottom:26px;
+
+    border:
+    1px solid rgba(200,169,107,0.16);
 
     box-shadow:
-    0 15px 35px rgba(0,0,0,0.08);
+    0 18px 40px rgba(0,0,0,0.08);
 }
 
 .location-name{
     font-size:20px;
     font-weight:800;
-    line-height:1.6;
+    line-height:1.7;
     margin-bottom:10px;
 }
 
@@ -332,43 +407,51 @@ body{
     font-size:14px;
     color:#777;
     line-height:1.8;
-    margin-bottom:28px;
+    margin-bottom:30px;
 }
 
 .traffic-box{
     background:#f8fafc;
-    border-radius:24px;
-    padding:24px;
+    border-radius:28px;
+    padding:26px;
+
+    border:
+    1px solid rgba(200,169,107,0.08);
 }
 
 .traffic-item + .traffic-item{
-    margin-top:20px;
+    margin-top:22px;
 }
 
 .traffic-label{
     font-size:13px;
-    font-weight:700;
-    color:#142d85;
+    font-weight:800;
+    color:#C8A96B;
     margin-bottom:6px;
 }
 
 .traffic-text{
     font-size:14px;
-    line-height:1.8;
+    line-height:1.9;
     color:#555;
 }
 
 /* FOOTER */
 
 .footer{
-    padding:42px 20px;
+    padding:44px 20px;
+
     background:#fafbfd;
+
     text-align:center;
+
+    border-top:
+    1px solid rgba(200,169,107,0.12);
 }
 
 .footer-logo{
-    width:190px;
-    margin:0 auto 20px;
+    width:205px;
+    margin:0 auto 22px;
 }
 
 .footer-logo img{
@@ -379,6 +462,7 @@ body{
 .footer-text{
     font-size:11px;
     color:#999;
+    letter-spacing:0.5px;
 }
 
 /* MOBILE */
@@ -386,11 +470,11 @@ body{
 @media(max-width:390px){
 
     .hero-title{
-        font-size:32px;
+        font-size:34px;
     }
 
     .hero-copy{
-        font-size:20px;
+        font-size:21px;
     }
 
     .message{
@@ -406,265 +490,257 @@ body{
 
 <div class="invitation-wrap">
 
-    <!-- HERO -->
-    <section class="hero">
+<section class="hero">
 
-        <div class="logo">
-            <img src="logo_top.png.png" alt="인카금융서비스">
-        </div>
+<div class="logo">
+<img src="logo_top.png.png" alt="인카금융서비스">
+</div>
 
-        <div class="label">
-            INVITATION
-        </div>
+<div class="label">
+INVITATION
+</div>
 
-        <h1 class="hero-title">
-            2026 인카금융<br>
-            드림라이프총괄 환영식
-        </h1>
+<h1 class="hero-title">
+2026 인카금융<br>
+드림라이프총괄 환영식
+</h1>
 
-        <div class="gold-line"></div>
+<div class="gold-line"></div>
 
-        <p class="hero-copy">
-            새로운 시작,<br>
-            함께하는 미래
-        </p>
+<p class="hero-copy">
+새로운 시작,<br>
+함께하는 미래
+</p>
 
-        <p class="hero-sub">
-            드림라이프총괄의 새로운 출발을 축하하며<br>
-            뜻깊은 자리에 여러분을 초대합니다.
-        </p>
+<p class="hero-sub">
+드림라이프총괄의 새로운 출발을 축하하며<br>
+뜻깊은 자리에 여러분을 초대합니다.
+</p>
 
-    </section>
+</section>
 
-    <!-- DATE -->
-    <section class="date-card">
+<section class="date-card">
 
-        <div class="date-top">
+<div class="date-top">
 
-            <div class="date-number">
-                22
-            </div>
+<div class="date-number">
+22
+</div>
 
-            <div class="date-info">
+<div class="date-info">
 
-                <div class="date-month">
-                    JUNE
-                </div>
+<div class="date-month">
+JUNE
+</div>
 
-                <div class="date-year">
-                    2026
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="date-bottom">
-
-            <div class="date-time">
-                2026년 6월 22일(월)<br>
-                오후 3시
-            </div>
-
-            <div class="date-location">
-                광주 김대중컨벤션센터<br>
-                4층 컨벤션홀
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- CONTENT -->
-    <section class="content">
-
-        <div class="section-title">
-            WELCOME MESSAGE
-        </div>
-
-        <p class="message">
-            서로의 비전과 열정이 하나로 이어지는 자리,<br>
-            새로운 도약의 시작을 함께해 주시기 바랍니다.<br><br>
-
-            여러분과 함께할 이 특별한 순간이<br>
-            더욱 빛날 수 있도록<br>
-            귀한 걸음 부탁드립니다.
-        </p>
-
-        <div class="divider"></div>
-
-        <div class="info-box">
-
-            <div class="info-item">
-
-                <div class="icon">
-                    <i class="fa-regular fa-calendar"></i>
-                </div>
-
-                <div>
-                    <div class="info-label">
-                        행사 일정
-                    </div>
-
-                    <div class="info-value">
-                        2026년 6월 22일(월)<br>
-                        오후 3시
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="info-item">
-
-                <div class="icon">
-                    <i class="fa-solid fa-location-dot"></i>
-                </div>
-
-                <div>
-                    <div class="info-label">
-                        행사 장소
-                    </div>
-
-                    <div class="info-value">
-                        광주 김대중컨벤션센터<br>
-                        4층 컨벤션홀
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- BUTTON -->
-    <section class="button-wrap">
-
-        <a
-            href="https://www.instagram.com/incar.finance/"
-            target="_blank"
-            class="btn btn-instagram"
-        >
-            <i class="fab fa-instagram"></i>
-            공식 인스타그램
-        </a>
-
-        <a
-            href="https://pf.kakao.com/_JPyxhX"
-            target="_blank"
-            class="btn btn-kakao"
-        >
-            <i class="fas fa-comment"></i>
-            카카오톡 채널
-        </a>
-
-        <p class="channel-guide">
-            인카금융서비스 공식 채널을 통해<br>
-            다양한 소식과 영업 콘텐츠를 받아보세요.
-        </p>
-
-    </section>
-
-    <!-- LOCATION -->
-    <section class="location-section">
-
-        <div class="location-title">
-            LOCATION
-        </div>
-
-        <div class="location-sub">
-            오시는 길
-        </div>
-
-        <!-- 카카오맵 -->
-        <div class="kakao-map-wrap">
-
-            <div id="daumRoughmapContainer1779942234482"
-                 class="root_daum_roughmap root_daum_roughmap_landing">
-            </div>
-
-        </div>
-
-        <div class="location-name">
-            광주 김대중컨벤션센터<br>
-            4층 컨벤션홀
-        </div>
-
-        <div class="location-address">
-            광주광역시 서구 상무누리로 30
-        </div>
-
-        <div class="traffic-box">
-
-            <div class="traffic-item">
-
-                <div class="traffic-label">
-                    지하철
-                </div>
-
-                <div class="traffic-text">
-                    김대중컨벤션센터역 5번 출구<br>
-                    도보 3분
-                </div>
-
-            </div>
-
-            <div class="traffic-item">
-
-                <div class="traffic-label">
-                    버스
-                </div>
-
-                <div class="traffic-text">
-                    김대중컨벤션센터 정류장 하차<br>
-                    일곡38 / 상무64
-                </div>
-
-            </div>
-
-            <div class="traffic-item">
-
-                <div class="traffic-label">
-                    주차
-                </div>
-
-                <div class="traffic-text">
-                    행사장 내 주차 가능
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-
-        <div class="footer-logo">
-            <img src="logo_bottom.png.png" alt="인카금융서비스">
-        </div>
-
-        <div class="footer-text">
-            © 2026 INCAR Financial Services
-        </div>
-
-    </footer>
+<div class="date-year">
+2026
+</div>
 
 </div>
 
-<!-- 카카오맵 스크립트 -->
+</div>
+
+<div class="date-bottom">
+
+<div class="date-time">
+2026년 6월 22일(월)<br>
+오후 3시
+</div>
+
+<div class="date-location">
+광주 김대중컨벤션센터<br>
+4층 컨벤션홀
+</div>
+
+</div>
+
+</section>
+
+<section class="content">
+
+<div class="section-title">
+WELCOME MESSAGE
+</div>
+
+<p class="message">
+서로의 비전과 열정이 하나로 이어지는 자리,<br>
+새로운 도약의 시작을 함께해 주시기 바랍니다.<br><br>
+
+여러분과 함께할 이 특별한 순간이<br>
+더욱 빛날 수 있도록<br>
+귀한 걸음 부탁드립니다.
+</p>
+
+<div class="divider"></div>
+
+<div class="info-box">
+
+<div class="info-item">
+
+<div class="icon">
+<i class="fa-regular fa-calendar"></i>
+</div>
+
+<div>
+<div class="info-label">
+행사 일정
+</div>
+
+<div class="info-value">
+2026년 6월 22일(월)<br>
+오후 3시
+</div>
+</div>
+
+</div>
+
+<div class="info-item">
+
+<div class="icon">
+<i class="fa-solid fa-location-dot"></i>
+</div>
+
+<div>
+<div class="info-label">
+행사 장소
+</div>
+
+<div class="info-value">
+광주 김대중컨벤션센터<br>
+4층 컨벤션홀
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="button-wrap">
+
+<a
+href="https://www.instagram.com/incar.finance/"
+target="_blank"
+class="btn btn-instagram"
+>
+<i class="fab fa-instagram"></i>
+공식 인스타그램
+</a>
+
+<a
+href="https://pf.kakao.com/_JPyxhX"
+target="_blank"
+class="btn btn-kakao"
+>
+<i class="fas fa-comment"></i>
+카카오톡 채널
+</a>
+
+<p class="channel-guide">
+인카금융서비스 공식 채널을 통해<br>
+다양한 소식과 영업 콘텐츠를 받아보세요.
+</p>
+
+</section>
+
+<section class="location-section">
+
+<div class="location-title">
+LOCATION
+</div>
+
+<div class="location-sub">
+오시는 길
+</div>
+
+<div class="kakao-map-wrap">
+
+<div id="daumRoughmapContainer1779942234482"
+class="root_daum_roughmap root_daum_roughmap_landing">
+</div>
+
+</div>
+
+<div class="location-name">
+광주 김대중컨벤션센터<br>
+4층 컨벤션홀
+</div>
+
+<div class="location-address">
+광주광역시 서구 상무누리로 30
+</div>
+
+<div class="traffic-box">
+
+<div class="traffic-item">
+
+<div class="traffic-label">
+지하철
+</div>
+
+<div class="traffic-text">
+김대중컨벤션센터역 5번 출구<br>
+도보 3분
+</div>
+
+</div>
+
+<div class="traffic-item">
+
+<div class="traffic-label">
+버스
+</div>
+
+<div class="traffic-text">
+김대중컨벤션센터 정류장 하차<br>
+일곡38 / 상무64
+</div>
+
+</div>
+
+<div class="traffic-item">
+
+<div class="traffic-label">
+주차
+</div>
+
+<div class="traffic-text">
+행사장 내 주차 가능
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer class="footer">
+
+<div class="footer-logo">
+<img src="logo_bottom.png.png" alt="인카금융서비스">
+</div>
+
+<div class="footer-text">
+© 2026 INCAR Financial Services
+</div>
+
+</footer>
+
+</div>
+
 <script charset="UTF-8"
 src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js">
 </script>
 
 <script charset="UTF-8">
-    new daum.roughmap.Lander({
-        "timestamp" : "1779942234482",
-        "key" : "oj3386mfe82",
-        "mapWidth" : "100%",
-        "mapHeight" : "360"
-    }).render();
+new daum.roughmap.Lander({
+"timestamp" : "1779942234482",
+"key" : "oj3386mfe82",
+"mapWidth" : "100%",
+"mapHeight" : "360"
+}).render();
 </script>
 
 </body>
