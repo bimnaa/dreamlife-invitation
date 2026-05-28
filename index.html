@@ -404,6 +404,87 @@ body{
     word-break:keep-all;
 }
 
+/* LOCATION */
+
+.location-section{
+    padding:
+    0
+    34px
+    60px;
+}
+
+.location-title{
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:3px;
+    color:#142d85;
+    margin-bottom:10px;
+}
+
+.location-sub{
+    font-size:28px;
+    font-weight:800;
+    letter-spacing:-1px;
+    margin-bottom:28px;
+}
+
+.map-image{
+    display:block;
+    overflow:hidden;
+
+    border-radius:24px;
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,0.08);
+
+    margin-bottom:24px;
+}
+
+.map-image img{
+    width:100%;
+    display:block;
+}
+
+.location-info{
+    margin-bottom:28px;
+}
+
+.location-name{
+    font-size:20px;
+    font-weight:800;
+    line-height:1.6;
+    margin-bottom:10px;
+}
+
+.location-address{
+    font-size:14px;
+    color:#777;
+    line-height:1.8;
+}
+
+.traffic-box{
+    background:#f8fafc;
+    border-radius:24px;
+    padding:24px;
+}
+
+.traffic-item + .traffic-item{
+    margin-top:20px;
+}
+
+.traffic-label{
+    font-size:13px;
+    font-weight:700;
+    color:#142d85;
+    margin-bottom:7px;
+}
+
+.traffic-text{
+    font-size:14px;
+    color:#555;
+    line-height:1.8;
+}
+
 /* FOOTER */
 
 .footer{
@@ -650,6 +731,76 @@ body{
             인카금융서비스 공식 채널을 통해<br>
             다양한 소식과 영업 콘텐츠를 받아보세요.
         </p>
+
+    </section>
+
+    <!-- LOCATION -->
+    <section class="location-section">
+
+        <div class="location-title">
+            LOCATION
+        </div>
+
+        <div class="location-sub">
+            오시는 길
+        </div>
+
+        <a
+            href="https://naver.me/5eUcmOL8"
+            target="_blank"
+            class="map-image"
+        >
+            <img src="map.png" alt="행사장 지도">
+        </a>
+
+        <div class="location-info">
+
+            <div class="location-name">
+                광주 김대중컨벤션센터<br>
+                4층 컨벤션홀
+            </div>
+
+            <div class="location-address">
+                광주광역시 서구 상무누리로 30
+            </div>
+
+        </div>
+
+        <div class="traffic-box">
+
+            <div class="traffic-item">
+                <div class="traffic-label">
+                    지하철
+                </div>
+
+                <div class="traffic-text">
+                    김대중컨벤션센터역 5번 출구<br>
+                    도보 3분
+                </div>
+            </div>
+
+            <div class="traffic-item">
+                <div class="traffic-label">
+                    버스
+                </div>
+
+                <div class="traffic-text">
+                    김대중컨벤션센터 정류장 하차<br>
+                    일곡38 / 상무64
+                </div>
+            </div>
+
+            <div class="traffic-item">
+                <div class="traffic-label">
+                    주차
+                </div>
+
+                <div class="traffic-text">
+                    행사장 내 주차 가능
+                </div>
+            </div>
+
+        </div>
 
     </section>
 
