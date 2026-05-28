@@ -2,8 +2,8 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>2026 인카금융 드림라이프총괄 환영식</title>
 
@@ -50,10 +50,7 @@ body{
     position:relative;
     overflow:hidden;
 
-    padding:
-    70px
-    34px
-    65px;
+    padding:70px 34px 65px;
 
     background:
     linear-gradient(
@@ -156,10 +153,7 @@ body{
 /* DATE CARD */
 
 .date-card{
-    margin:
-    -24px
-    28px
-    0;
+    margin:-24px 28px 0;
 
     background:#142d85;
     color:#fff;
@@ -228,10 +222,7 @@ body{
 /* CONTENT */
 
 .content{
-    padding:
-    58px
-    34px
-    42px;
+    padding:58px 34px 42px;
 }
 
 .section-title{
@@ -320,10 +311,7 @@ body{
 /* BUTTON */
 
 .button-wrap{
-    padding:
-    0
-    34px
-    50px;
+    padding:0 34px 50px;
 
     display:flex;
     flex-direction:column;
@@ -348,10 +336,7 @@ body{
     transition:0.25s;
 }
 
-/* INSTAGRAM */
-
 .btn-instagram{
-
     background:
     linear-gradient(
         135deg,
@@ -370,21 +355,9 @@ body{
     color:#fff;
 }
 
-/* KAKAO */
-
 .btn-kakao{
     background:#FEE500;
     color:#111;
-}
-
-/* MAP */
-
-.btn-map{
-    background:#142d85;
-    color:#fff;
-
-    box-shadow:
-    0 10px 22px rgba(20,45,133,0.16);
 }
 
 .btn:active{
@@ -407,10 +380,7 @@ body{
 /* LOCATION */
 
 .location-section{
-    padding:
-    0
-    34px
-    60px;
+    padding:0 34px 60px;
 }
 
 .location-title{
@@ -428,7 +398,6 @@ body{
     margin-bottom:28px;
 }
 
-```css
 .map-image{
     display:block;
     overflow:hidden;
@@ -444,21 +413,7 @@ body{
 .map-image img{
     width:100%;
     display:block;
-
-    image-rendering:auto;
 }
-
-.footer-logo{
-    width:190px;
-    margin:0 auto 20px;
-}
-
-.footer-logo img{
-    width:100%;
-    display:block;
-}
-```
-
 
 .location-info{
     margin-bottom:28px;
@@ -503,9 +458,7 @@ body{
 /* FOOTER */
 
 .footer{
-    padding:
-    42px
-    20px;
+    padding:42px 20px;
 
     background:#fafbfd;
 
@@ -528,34 +481,7 @@ body{
     letter-spacing:0.5px;
 }
 
-/* ANIMATION */
-
-.fade-up{
-    opacity:0;
-    transform:translateY(20px);
-    animation:fadeUp 0.8s forwards;
-}
-
-.delay-1{
-    animation-delay:0.2s;
-}
-
-.delay-2{
-    animation-delay:0.4s;
-}
-
-.delay-3{
-    animation-delay:0.6s;
-}
-
-@keyframes fadeUp{
-
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-
-}
+/* MOBILE */
 
 @media(max-width:390px){
 
@@ -583,27 +509,27 @@ body{
     <!-- HERO -->
     <section class="hero">
 
-        <div class="logo fade-up">
+        <div class="logo">
             <img src="logo_top.png" alt="인카금융서비스">
         </div>
 
-        <div class="label fade-up delay-1">
+        <div class="label">
             INVITATION
         </div>
 
-        <h1 class="hero-title fade-up delay-1">
+        <h1 class="hero-title">
             2026 인카금융<br>
             드림라이프총괄 환영식
         </h1>
 
-        <div class="gold-line fade-up delay-2"></div>
+        <div class="gold-line"></div>
 
-        <p class="hero-copy fade-up delay-2">
+        <p class="hero-copy">
             새로운 시작,<br>
             함께하는 미래
         </p>
 
-        <p class="hero-sub fade-up delay-3">
+        <p class="hero-sub">
             드림라이프총괄의 새로운 출발을 축하하며<br>
             뜻깊은 자리에 여러분을 초대합니다.
         </p>
@@ -611,7 +537,7 @@ body{
     </section>
 
     <!-- DATE -->
-    <section class="date-card fade-up delay-2">
+    <section class="date-card">
 
         <div class="date-top">
 
@@ -650,7 +576,7 @@ body{
     </section>
 
     <!-- CONTENT -->
-    <section class="content fade-up delay-3">
+    <section class="content">
 
         <div class="section-title">
             WELCOME MESSAGE
@@ -667,7 +593,6 @@ body{
 
         <div class="divider"></div>
 
-        <!-- INFO -->
         <div class="info-box">
 
             <div class="info-item">
@@ -712,119 +637,118 @@ body{
 
     </section>
 
-```html
-<!-- BUTTON -->
-<section class="button-wrap fade-up delay-3">
+    <!-- BUTTON -->
+    <section class="button-wrap">
 
-    <a
-        href="https://www.instagram.com/incar.finance/"
-        target="_blank"
-        class="btn btn-instagram"
-    >
-        <i class="fab fa-instagram"></i>
-        공식 인스타그램
-    </a>
+        <a
+            href="https://www.instagram.com/incar.finance/"
+            target="_blank"
+            class="btn btn-instagram"
+        >
+            <i class="fab fa-instagram"></i>
+            공식 인스타그램
+        </a>
 
-    <a
-        href="https://pf.kakao.com/_JPyxhX"
-        target="_blank"
-        class="btn btn-kakao"
-    >
-        <i class="fas fa-comment"></i>
-        카카오톡 채널
-    </a>
+        <a
+            href="https://pf.kakao.com/_JPyxhX"
+            target="_blank"
+            class="btn btn-kakao"
+        >
+            <i class="fas fa-comment"></i>
+            카카오톡 채널
+        </a>
 
-    <p class="channel-guide">
-        인카금융서비스 공식 채널을 통해<br>
-        다양한 소식과 영업 콘텐츠를 받아보세요.
-    </p>
+        <p class="channel-guide">
+            인카금융서비스 공식 채널을 통해<br>
+            다양한 소식과 영업 콘텐츠를 받아보세요.
+        </p>
 
-</section>
+    </section>
 
-<!-- LOCATION -->
-<section class="location-section">
+    <!-- LOCATION -->
+    <section class="location-section">
 
-    <div class="location-title">
-        LOCATION
-    </div>
-
-    <div class="location-sub">
-        오시는 길
-    </div>
-
-    <a
-        href="https://naver.me/5eUcmOL8"
-        target="_blank"
-        class="map-image"
-    >
-        <img src="map.png" alt="행사장 지도">
-    </a>
-
-    <div class="location-info">
-
-        <div class="location-name">
-            광주 김대중컨벤션센터<br>
-            4층 컨벤션홀
+        <div class="location-title">
+            LOCATION
         </div>
 
-        <div class="location-address">
-            광주광역시 서구 상무누리로 30
+        <div class="location-sub">
+            오시는 길
         </div>
 
-    </div>
+        <a
+            href="https://naver.me/5eUcmOL8"
+            target="_blank"
+            class="map-image"
+        >
+            <img src="map.png" alt="행사장 지도">
+        </a>
 
-    <div class="traffic-box">
+        <div class="location-info">
 
-        <div class="traffic-item">
-            <div class="traffic-label">
-                지하철
+            <div class="location-name">
+                광주 김대중컨벤션센터<br>
+                4층 컨벤션홀
             </div>
 
-            <div class="traffic-text">
-                김대중컨벤션센터역 5번 출구<br>
-                도보 3분
+            <div class="location-address">
+                광주광역시 서구 상무누리로 30
             </div>
+
         </div>
 
-        <div class="traffic-item">
-            <div class="traffic-label">
-                버스
+        <div class="traffic-box">
+
+            <div class="traffic-item">
+                <div class="traffic-label">
+                    지하철
+                </div>
+
+                <div class="traffic-text">
+                    김대중컨벤션센터역 5번 출구<br>
+                    도보 3분
+                </div>
             </div>
 
-            <div class="traffic-text">
-                김대중컨벤션센터 정류장 하차<br>
-                일곡38 / 상무64
+            <div class="traffic-item">
+                <div class="traffic-label">
+                    버스
+                </div>
+
+                <div class="traffic-text">
+                    김대중컨벤션센터 정류장 하차<br>
+                    일곡38 / 상무64
+                </div>
             </div>
+
+            <div class="traffic-item">
+                <div class="traffic-label">
+                    주차
+                </div>
+
+                <div class="traffic-text">
+                    행사장 내 주차 가능
+                </div>
+            </div>
+
         </div>
 
-        <div class="traffic-item">
-            <div class="traffic-label">
-                주차
-            </div>
+    </section>
 
-            <div class="traffic-text">
-                행사장 내 주차 가능
-            </div>
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-logo">
+            <img src="logo_bottom.png" alt="인카금융서비스">
         </div>
 
-    </div>
+        <div class="footer-text">
+            © 2026 INCAR Financial Services
+        </div>
 
-</section>
+    </footer>
 
-<!-- FOOTER -->
-<footer class="footer">
-
-    <div class="footer-logo">
-        <img src="logo_bottom.png" alt="인카금융서비스">
-    </div>
-
-    <div class="footer-text">
-        © 2026 INCAR Financial Services
-    </div>
-
-</footer>
-```
-
+</div>
 
 </body>
 </html>
