@@ -428,6 +428,7 @@ body{
     margin-bottom:28px;
 }
 
+```css
 .map-image{
     display:block;
     overflow:hidden;
@@ -443,7 +444,21 @@ body{
 .map-image img{
     width:100%;
     display:block;
+
+    image-rendering:auto;
 }
+
+.footer-logo{
+    width:190px;
+    margin:0 auto 20px;
+}
+
+.footer-logo img{
+    width:100%;
+    display:block;
+}
+```
+
 
 .location-info{
     margin-bottom:28px;
@@ -697,127 +712,119 @@ body{
 
     </section>
 
-    <!-- BUTTON -->
-    <section class="button-wrap fade-up delay-3">
+```html
+<!-- BUTTON -->
+<section class="button-wrap fade-up delay-3">
 
-        <a
-            href="https://www.instagram.com/incar.finance/"
-            target="_blank"
-            class="btn btn-instagram"
-        >
-            <i class="fab fa-instagram"></i>
-            공식 인스타그램
-        </a>
+    <a
+        href="https://www.instagram.com/incar.finance/"
+        target="_blank"
+        class="btn btn-instagram"
+    >
+        <i class="fab fa-instagram"></i>
+        공식 인스타그램
+    </a>
 
-        <a
-            href="https://pf.kakao.com/_JPyxhX"
-            target="_blank"
-            class="btn btn-kakao"
-        >
-            <i class="fas fa-comment"></i>
-            카카오톡 채널
-        </a>
+    <a
+        href="https://pf.kakao.com/_JPyxhX"
+        target="_blank"
+        class="btn btn-kakao"
+    >
+        <i class="fas fa-comment"></i>
+        카카오톡 채널
+    </a>
 
-        <a
-            href="https://naver.me/5eUcmOL8"
-            target="_blank"
-            class="btn btn-map"
-        >
-            <i class="fa-solid fa-map-location-dot"></i>
-            오시는 길 안내
-        </a>
+    <p class="channel-guide">
+        인카금융서비스 공식 채널을 통해<br>
+        다양한 소식과 영업 콘텐츠를 받아보세요.
+    </p>
 
-        <p class="channel-guide">
-            인카금융서비스 공식 채널을 통해<br>
-            다양한 소식과 영업 콘텐츠를 받아보세요.
-        </p>
+</section>
 
-    </section>
+<!-- LOCATION -->
+<section class="location-section">
 
-    <!-- LOCATION -->
-    <section class="location-section">
+    <div class="location-title">
+        LOCATION
+    </div>
 
-        <div class="location-title">
-            LOCATION
+    <div class="location-sub">
+        오시는 길
+    </div>
+
+    <a
+        href="https://naver.me/5eUcmOL8"
+        target="_blank"
+        class="map-image"
+    >
+        <img src="map.png" alt="행사장 지도">
+    </a>
+
+    <div class="location-info">
+
+        <div class="location-name">
+            광주 김대중컨벤션센터<br>
+            4층 컨벤션홀
         </div>
 
-        <div class="location-sub">
-            오시는 길
+        <div class="location-address">
+            광주광역시 서구 상무누리로 30
         </div>
 
-        <a
-            href="https://naver.me/5eUcmOL8"
-            target="_blank"
-            class="map-image"
-        >
-            <img src="map.png" alt="행사장 지도">
-        </a>
+    </div>
 
-        <div class="location-info">
+    <div class="traffic-box">
 
-            <div class="location-name">
-                광주 김대중컨벤션센터<br>
-                4층 컨벤션홀
+        <div class="traffic-item">
+            <div class="traffic-label">
+                지하철
             </div>
 
-            <div class="location-address">
-                광주광역시 서구 상무누리로 30
+            <div class="traffic-text">
+                김대중컨벤션센터역 5번 출구<br>
+                도보 3분
             </div>
-
         </div>
 
-        <div class="traffic-box">
-
-            <div class="traffic-item">
-                <div class="traffic-label">
-                    지하철
-                </div>
-
-                <div class="traffic-text">
-                    김대중컨벤션센터역 5번 출구<br>
-                    도보 3분
-                </div>
+        <div class="traffic-item">
+            <div class="traffic-label">
+                버스
             </div>
 
-            <div class="traffic-item">
-                <div class="traffic-label">
-                    버스
-                </div>
+            <div class="traffic-text">
+                김대중컨벤션센터 정류장 하차<br>
+                일곡38 / 상무64
+            </div>
+        </div>
 
-                <div class="traffic-text">
-                    김대중컨벤션센터 정류장 하차<br>
-                    일곡38 / 상무64
-                </div>
+        <div class="traffic-item">
+            <div class="traffic-label">
+                주차
             </div>
 
-            <div class="traffic-item">
-                <div class="traffic-label">
-                    주차
-                </div>
-
-                <div class="traffic-text">
-                    행사장 내 주차 가능
-                </div>
+            <div class="traffic-text">
+                행사장 내 주차 가능
             </div>
-
         </div>
 
-    </section>
+    </div>
 
-    <!-- FOOTER -->
-    <footer class="footer">
+</section>
 
-        <div class="footer-logo">
-            <img src="logo_bottom.png" alt="인카금융서비스">
-        </div>
+<!-- FOOTER -->
+<footer class="footer">
 
-        <div class="footer-text">
-            © 2026 INCAR Financial Services
-        </div>
+    <div class="footer-logo">
+        <img src="logo_bottom.png" alt="인카금융서비스">
+    </div>
 
-    </footer>
+    <div class="footer-text">
+        © 2026 INCAR Financial Services
+    </div>
 
-</div>
+</footer>
+```
+
 
 </body>
 </html>
